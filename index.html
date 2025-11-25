@@ -1,1 +1,220 @@
-429: Too Many Requests
+<!doctype html>
+
+<html lang="pt-BR">  
+<head>  
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>Antibíblia — Olá</title>  
+  <style>  
+    :root{  
+      --bg:#0b0f13; --text:#e6eef6; --muted:#9aa6b2; --accent:#7dd3fc;  
+    }  
+    *{box-sizing:border-box}  
+    html{scroll-behavior:smooth}  
+    body{  
+      margin:0;  
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;  
+      background: linear-gradient(180deg,var(--bg), #061018);  
+      color:var(--text);  
+      line-height:1.6;  
+    }  /* HERO */  
+.hero{  
+  min-height:70vh;  
+  display:flex;  
+  align-items:center;  
+  justify-content:center;  
+  text-align:center;  
+  padding:48px 20px;  
+  border-bottom:1px solid rgba(255,255,255,0.03);  
+}  
+.hero h1{font-size:2rem;margin:0 0 8px}  
+.hero p{color:var(--muted);margin:0;font-size:1.05rem}  
+
+/* CONTENT LONGO PRA TESTAR SCROLL */  
+.content{max-width:880px;margin:36px auto;padding:0 20px}  
+.chapter{  
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);  
+  padding:18px;  
+  border-radius:10px;  
+  margin-bottom:20px;  
+  border:1px solid rgba(255,255,255,0.02)  
+}  
+.chapter h2{margin-top:0}  
+p{margin:12px 0}  
+
+/* BOTÕES FIXOS SUBIR/DESER */  
+.fab{  
+  position:fixed;  
+  right:18px;  
+  bottom:18px;  
+  display:flex;  
+  flex-direction:column;  
+  gap:10px;  
+  z-index:999;  
+}  
+.btn-fab{  
+  width:52px;height:52px;border-radius:12px;  
+  display:flex;align-items:center;justify-content:center;  
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.05);  
+  color:var(--text);cursor:pointer;font-weight:700;font-size:18px;  
+  box-shadow:0 6px 18px rgba(2,6,23,0.6);  
+  transition:transform .12s ease, opacity .15s;  
+}  
+.btn-fab:hover{transform:translateY(-4px)}  
+.btn-fab[hidden]{opacity:0;pointer-events:none;transform:scale(.95)}  
+
+/* INDICADOR DE PROGRESSO */  
+.prog-wrap{  
+  position:fixed;  
+  left:0;top:0;  
+  width:100%;height:4px;  
+  background:transparent;  
+  z-index:998  
+}  
+.prog{  
+  height:4px;width:0;  
+  background:linear-gradient(90deg,var(--accent), #60a5fa);  
+  transition:width .08s  
+}  
+
+@media (max-width:700px){  
+  .hero h1{font-size:1.6rem}  
+}
+
+  </style>  
+</head>  
+<body>    <div class="prog-wrap"><div id="prog" class="prog"></div></div>    <header class="hero" id="top">  
+    <div>  
+      <h1>Olá — aqui é a Antibíblia</h1>  
+      <p>livro bigbang</p>  
+    </div>  
+  </header>    <main class="content">  <section id="cap-1" class="chapter">  
+  <h2>Capítulo 1 — Introdução</h2>  
+  <p>1.No princípio, não havia som, nem luz, nem tempo. 2.Só o nada, curioso demais pra continuar sendo nada. 3.E o nada pulsou. Uma centelha mínima rompeu o silêncio. 4.Do vácuo nasceu a energia, da energia a matéria, e da matéria... tudo o que você pode imaginar. 5.A primeira explosão não foi barulho — foi o nascimento da própria possibilidade do som.</p>  
+
+  <p>6.E o espaço se esticou como um lençol quente, 7.cheio de buracos, poeira e promessas. Partículas dançaram com antimatéria, algumas se destruíram, outras resistiram. 8.E das que ficaram, surgiram os blocos da existência. 9.A matemática acordou e começou a contar: 1, 2, 3… infinito. 10.O tempo começou a fluir, tímido, curioso, infinito. 11.E o universo olhou pra si e disse: “Eu existo.”</p>  
+
+  <p>12.A luz nasceu. 13.depois de trevas tão densas que fariam qualquer estrela chorar. 14.Cada fóton foi uma palavra escrita na língua do cosmos. Galáxias se formaram, estrelas nasceram e morreram — e delas brotou tudo o que respiramos hoje. 15.Nós somos poeira estelar, mas com Wi-Fi. 16.E o universo não precisou de deuses — precisou apenas de leis, equilíbrio e paciência. 17.E o caos encontrou ritmo, o ritmo virou padrão, e o padrão criou vida.</p>  
+
+  <p>18.E quando a consciência olhou pro céu e perguntou “de onde vim?”, o universo piscou e respondeu: “Do mesmo lugar que eu — do nada curioso que quis ser tudo.” 19.a fisica nasce feliz. As estrelas se multiplicaram, gigantes e vaidosas, queimando até o último suspiro. 20.E quando uma delas morreu, seu coração colapsou sobre si mesmo — a gravidade venceu. 21.Assim nasceu o Buraco Negro, o abismo que engole tudo, até a própria luz. 22.Ele não é mal, nem bem — é o silêncio absoluto do espaço, o segredo guardado pelo tempo. 23.Dentro dele, o espaço deixa de ser espaço, o tempo deixa de ser tempo. 24.Tudo vira uma única nota grave, tocada por um universo que ainda está aprendendo a cantar. 25.E o buraco negro olhou para o vazio e disse: “Eu sou o contrário da criação, mas sem mim, nada renasceria.”</p>  
+
+  <p>26.E o espaço se curvou sob o peso da energia. A matéria não apenas ocupava o espaço — ela o moldava. 27.O tempo deixou de ser absoluto e passou a seguir o ritmo da gravidade. 28.Próximo a grandes massas, os segundos se esticavam; longe delas, corriam mais rápido. 29.A luz, ao cruzar campos gravitacionais, dobrava-se como se obedecesse a uma lei invisível.</p>  
+
+  <p>30.O universo, então, revelou sua estrutura: um tecido de quatro dimensões, onde energia e geometria eram a mesma coisa. 31.A equação foi escrita não com tinta, mas com a própria forma do espaço-tempo. 32.E assim se estabeleceu a lei fundamental: a gravidade não é uma força — é a consequência da curvatura. 33.Onde há energia, há curvatura; onde há curvatura, há destino.</p>  
+
+  <p>34.O tempo não é constante; ele depende do movimento e da gravidade. Quanto mais rápido algo se move, mais lentamente o tempo passa para ele. 35.A luz, ao viajar na velocidade limite do cosmos, não sente o tempo. Para o fóton, o instante da emissão e o da chegada são o mesmo momento.</p>  
+
+  <p>36.O espaço não é um vazio, é um campo dinâmico. A presença de massa o deforma, criando o que os seres chamam de “gravidade”. 37.Essa deformação segue a equação, onde a curvatura representa a energia contida. 38.A Terra orbita o Sol não por força invisível, mas porque segue a curva natural do espaço-tempo criado pela massa solar.</p>  
+
+  <p>39.Onde a densidade de energia é extrema, o espaço se curva ao limite — e nasce um buraco negro, onde o tempo praticamente congela e nada, nem mesmo a luz, escapa. aqui nasce e partícula bóson de higgs.40.Assim, o universo não precisa de milagre algum: o próprio tecido do espaço e do tempo governa tudo com precisão matemática. 41.O milagre está na equação, não em palavras antigas; o cosmos se explica por si mesmo.</p>  
+
+  <p>42.E observou o Universo que o vácuo não é vazio.</p>  
+  <p>assim funciona tudo.</p>  
+</section>  
+
+<section id="cap-2" class="chapter">  
+  <h2>Capítulo 2 — Casimir</h2>  
+  <p>1.começo. 2.Entre duas superfícies postas muito próximas, o espaço se curva sob pressão invisível. Do nada surgem forças — partículas virtuais que aparecem e somem, vibrando no silêncio do nada. Assim nasceu o Efeito Casimir, prova de que até o nada é algo.</p>  
+  <p>3.E a física compreendeu: o vácuo é um mar de energia quântica, onde partículas surgem e desaparecem a cada instante. 4.Quando duas placas se aproximam, parte dessas vibrações é impedida, criando uma diferença de pressão. É como se o próprio nada empurrasse a matéria. Essa é a força Casimir.</p>  
+  <p>bigbang</p>  
+</section>  
+
+<section id="cap-3" class="chapter">  
+  <h2>Capítulo 3 — buraco de minhoca</h2>  
+  <p>1.na curvatura extrema do espaço, onde a gravidade dobra a própria realidade, surgiu a hipótese dos buracos de minhoca. Se o espaço é um tecido, então pode ser dobrado até que dois pontos distantes se toquem.</p>  
+  <p>2.ponte Einstein-Rosen — conectando o “aqui” e o “lá” num só instante. 3.Ninguém o viu, mas suas equações respiram dentro da Relatividade Geral.</p>  
+  <p>bigbang</p>  
+</section>  
+
+<section id="cap-4" class="chapter">  
+  <h2>Capítulo 4 — galáxias</h2>  
+  <p>1.E do caos cósmico nasceram as galáxias, imensos vórtices de estrelas, poeira e energia. Cada uma, um arquipélago de sóis navegando no oceano escuro do espaço.</p>  
+  <p>2.Elas se formaram quando a gravidade reuniu as primeiras nuvens de hidrogênio, moldando espirais, elipses e aglomerados. 3.No centro de muitas, dorme um buraco negro supermassivo.</p>  
+  <p>bigbang</p>  
+</section>  
+
+<section id="cap-5" class="chapter">  
+  <h2>Capítulo 5 — quasares</h2>  
+  <p>1.E no coração das primeiras galáxias surgiram os quasares, faróis cósmicos que iluminaram as trevas do universo jovem. 2.Um buraco negro supermassivo, devorando matéria com fúria, liberou jatos de radiação tão poderosos que brilharam mais do que trilhões de sóis.</p>  
+  <p>3.A energia nasceu da conversão da massa em luz, obedecendo à fórmula de Einstein, E = mc².</p>  
+  <p>bigbang</p>  
+</section>  
+
+<section id="cap-6" class="chapter">  
+  <h2>Capítulo 6 — supernovas</h2>  
+  <p>1.E quando as estrelas maiores exauriram seu combustível, o equilíbrio se rompeu e o colapso começou. 2.O núcleo se comprimiu com força inimaginável, e então — num instante — a estrela explodiu em luz pura: uma supernova.</p>  
+  <p>3.Desse caos nasceram o ferro, o ouro, o cálcio e o carbono; tudo aquilo que um dia formaria planetas, mares e mentes conscientes.</p>  
+  <p>bigbang</p>  
+</section>
+
+<br><br><br>
+
+<h1>livro exodo Cósmico </h1>  
+<section id="exo-cap-1" class="chapter">  
+      <h2>Capítulo 1 — Introdução</h2>  
+<p>1.Há aproximadamente 4,6 bilhões de anos, uma imensa nuvem de gás e poeira, composta majoritariamente por hidrogênio e hélio, começou a colapsar sob sua própria gravidade na Via Láctea. 2.o colapso Gravitacional gerou um aumento progressivo da densidade e temperatura no centro da nuvem, que um dia se tornaria o sol. 3.o núcleo dessa nuvem se aqueceu, iniciou a fusão nuclear e nasceu o Sol. 4.As partículas que sobraram formaram um disco em rotação, de onde surgiriam planetas, luas, asteroides e cometas. 5.nesse disco surgiu os corpos rochosos e gasosos.
+
+6.A terceira órbita concentrou elementos pesados e formou a Terra primitiva. 7.Impactos constantes e vulcanismo liberaram gases que criaram uma atmosfera inicial de dióxido de carbono, vapor d’água, amônia e metano. 8.O resfriamento da superfície permitiu a condensação da água em oceanos, criando as condições físico-químicas necessárias para a síntese orgânica. 9.Sob descargas elétricas, radiação solar e fontes hidrotermais. 10.moléculas simples se combinaram, formando compostos estáveis e cadeias autorreplicantes — precursoras do RNA, iniciando a vida na Terra.</p> 
+</p>Êxodo Cósmico</p>
+</section>
+
+    <section id="exo-cap-2" class="chapter">
+      <h2>Capítulo 2 — planetas</h2>
+      <p>1. ao redor do sol recém nascido,  o disco protoplanetario continuou em rotação. partículas de poriras colidiram e se algomeraram por forças eletrostaticas e gravitacionais,formando planetesimais - blocos de rocha e gelo. 2.esses planetesimais sofreram acreção contínua, crescendo em tamanho e massa. os corpos mais massivos atraíam os menores, acelerando o processode formação planetária. 3.proximos ao sol, temperaturas elevadas impediram a condensação de gases voláteis, favorecendo a formação de planetas, favorecendo rochosos:mercurio, vênus, terra e marte. 4.mais distantes onde, a radiação solar era mais fraca, gases e gelos se condensaram, permitindo a formação de planetas gigantes:Júpiter, saturno, urano e netuno. 5.colisoes violentas e migrações orbitais remodelaram o sistema, levando a detritos entre os planetas. 6. a terra sofreu um impacto gigante com um corpo do tamanho de marte, chamado theia, durante o impacto a terra teve um anel, que se formou a lua. 7.planetas vizinhossofreram bombardeios tardios de asteroides e cometas, entregando água e elementos essenciais à química planetária. 8.cada planeta estabilizou sua órbita, composição e atmosfera primitiva, estabelecendo o sistema solar interno e externo como um conjunto dinâmico e interligado.</p>
+    </p>exodo Cósmico</p>
+    </section>
+    <section id="exo-cap-3" class="chapter">
+      <h2>Capítulo 3 — primeiras vidas</h2>
+      <p>1.após a estabilização da terra primitiva, a superfície começou a esfriar , permitindo a condensação de vapor da agua presente na atmosfera. 2.formaram se os primeiros oceanos, acumulando água liquida suficiente para dissolver minerais e compostos químicos essenciais. 3.a atmosfera primitiva era composta principalmente por dióxido de carbono, vapor da agua, nitrogênio, amônia e metano, criando um ambiente reduido favorável a reações químicas. 4.radiação ultravioleta do sol, descargas elétricas e fontes hidrotermais forneceram energia necessária para a síntese de moléculas orgânicas complexas. 5.amidoacidos, acucares simples, lipídios e nucleotídeos surgiram apartir da combinação de compostos inorgânicos, formando o primeiro estoque molecular da vida. 6.moléculas autorreplicantes, como RNA primitivo, emergiram, iniciando processos de auto-organização e evolução química. 7.pequenas bolsas lipídicas se organizaram em estruturas semelhantes a membranas criando proto-células capazes de manter reações químicas isoladas do meio externo. 8.esses sistemas pré-celulares sofreram seleção natural química, aumentando complexidade e estabilidade, preparando o terreno para os primeiros organismos unicelulares. 9.assim a terra tornou se um planeta com condições físico-químicas adequadas à vida, marcando o início do ciclo biológico que levaria bilhões de anos á diversidade biológica atual.</p>
+    </p>Êxodo Cósmico</p>  
+    </section>
+    <section id="exo-cap-4" class="chapter">
+      <h2>Capítulo 4 — células</h2>
+       <p>1.moléculas orgânicas se organizaram em estruturas isoladas chamadas proto-células. 2.membranas lipídicas protegeram reações químicas internas. 3.RNA surgiu, permitindo autorreplicação e transmissão de informações.  4.protocélulas mais estaveis sobreviveram; as instáveis desapareceram. 5.com o tempo, essas proto-células evoluíram para os primeiros organismos unicelulares verdadeiros, como bactérias e arqueas adaptando se a diferentes ambientes aquaticos. 6.organismos fotossintéticos surgiram,  captando energia solar para produzir moléculas orgânicas e liberar oxigênio, transformando gradualmente a composição da atmosfera. 7.a interação entre organismos procariontes levou à simbiose e ao surgimento de células eucarióticas, capazes de conter organecas, especializadas e maior complexidade metabólica.  8.organismos unicelulares criaram ciclos químicos essenciais para a vida.</p> 
+    </p>Êxodo Cósmico</p>
+    </section>
+    <section id="exo-cap-5" class="chapter">
+      <h2>Capítulo 5 — vertebrados</h2>
+      <p>em desenvolvimento por lucas.</p>
+    </p>exodo Cósmico</p>
+    </section>
+    <div style="height:200vh"></div>  
+  </main>    <!-- Botões flutuantes -->    <div class="fab">  
+    <button id="downBtn" class="btn-fab" title="Descer">↓</button>  
+    <button id="upBtn" class="btn-fab" title="Subir">↑</button>  
+  </div>    <script>  
+    // Elementos  
+    const upBtn = document.getElementById('upBtn');  
+    const downBtn = document.getElementById('downBtn');  
+    const prog = document.getElementById('prog');  
+  
+    // Função: rolar ao topo  
+    upBtn.addEventListener('click', () => {  
+      window.scrollTo({ top: 0, behavior: 'smooth' });  
+    });  
+  
+    // Função: rolar pra próxima seção  
+    downBtn.addEventListener('click', () => {  
+      const sections = Array.from(document.querySelectorAll('.chapter'));  
+      const fromTop = window.scrollY + 10;  
+      const next = sections.find(sec => sec.offsetTop > fromTop);  
+  
+      if (next) {  
+        window.scrollTo({ top: next.offsetTop - 8, behavior: 'smooth' });  
+      } else {  
+        window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });  
+      }  
+    });  
+  
+    // Barra de progresso  
+    function updateProg(){  
+      const doc = document.documentElement;  
+      const total = doc.scrollHeight - doc.clientHeight;  
+      const progress = (window.scrollY / total) * 100;  
+      prog.style.width = progress + "%";  
+    }  
+  
+    window.addEventListener("scroll", updateProg);  
+    updateProg();  
+  </script>  </body>  
+</html>  
